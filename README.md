@@ -10,6 +10,8 @@ php artisan serve
 'timezone' => 'Asia/Tokyo',   
 'locale' => 'ja',   
 'faker_locale' => 'ja_JP',  
+php artisan storage:link
+php artisan migrate
 
 ## Git
 git init

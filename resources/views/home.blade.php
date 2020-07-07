@@ -64,13 +64,14 @@
         </style>
     </head>
     <body>
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
+                        ログインしています。
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        ログインしていません。
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
@@ -87,9 +88,13 @@
 
                 <div class="links">
                     <a href="/user/1"">ユーザー１のページ</a>
-
+                    <a href="/logout">Logout</a>
                 </div>
+
+
+
             </div>
         </div>
+
     </body>
 </html>
