@@ -10,14 +10,14 @@ php artisan serve
 'timezone' => 'Asia/Tokyo',   
 'locale' => 'ja',   
 'faker_locale' => 'ja_JP',  
-php artisan storage:link
-php artisan migrate
+php artisan storage:link  
+php artisan migrate  
 
 ## Git
 git init
 
 ## Laravel Socialiteをインストール
-composer require laravel/socialite
+composer require laravel/socialite  
 
 
 
